@@ -4,3 +4,14 @@ config.json   generate_logs.txt           hh.py                   model-00001-of
 
 Inside tokenizer:
 tokenizer_config.json  tokenizer.json
+
+commands.txt:
+
+Training Mode
+python train_student_model.py --mode train --data h.jsonl --config_path config.json --teacher llama3.2
+Evaluation Mode
+python train_student_model.py --mode evaluate --model_path student_model.pt --test_data h.jsonl --config_path config.json --teacher llama3.2
+Text Generation Mode
+python train_student_model.py --mode generate --model_path student_model.pt --prompt "What is the difference between " --gen_max_len 100 --config_path config.json --teacher llama3.2
+
+train_student_model.py -->hh.py
