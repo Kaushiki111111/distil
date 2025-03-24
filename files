@@ -1,0 +1,6 @@
+commands.txt  databricks-dolly-15k.jsonl  generation_config.json  logs.txt                          model-00002-of-00002.safetensors  special_tokens_map.json  test_l3.py     tokenizer
+config.json   generate_logs.txt           hh.py                   model-00001-of-00002.safetensors  model.safetensors.index.json      student_model.pt         test_llama.py
+
+
+Inside tokenizer:
+tokenizer_config.json  tokenizer.json
